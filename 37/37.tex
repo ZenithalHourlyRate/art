@@ -1,0 +1,20 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif CN Heavy}
+
+\begin{document}
+
+\definecolor{bg}{rgb}{0,0,0}
+\definecolor{no}{rgb}{1,1,1}
+\begin{tikzpicture}
+  % Border and Baseline
+  \fill [color=bg] (-1,-1) rectangle (2,1);
+  \node [color=no] at (0,0.37) {女};
+  \node [color=no] at (0,0) {生};
+  \node [color=no] at (0.07,-0.4) {节、};
+  \node [color=no] at (0.7,-0.4) {襲来};
+\end{tikzpicture}
+
+\end{document}
+
+% vim: nospell
