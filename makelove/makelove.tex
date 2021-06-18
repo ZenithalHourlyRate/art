@@ -1,0 +1,60 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif CN Heavy}
+
+\newcommand{\T}[1]{\texttt{#1}}
+
+\begin{document}
+
+\definecolor{bg}{rgb}{1,1,1}
+\definecolor{no}{rgb}{0,0,0}
+\begin{tikzpicture}
+  % Border and Baseline
+  \fill [color=bg] (-1,-1) rectangle (10,10);
+  \draw [color=no, thick] (0, 0) -- (9, 0)
+                   (0, 0) -- (0, 9)
+                   (0, 9) -- (9, 9)
+                   (9, 0) -- (9, 9)
+
+                   (0, 3) -- (9, 3)
+                   (3, 0) -- (3, 9)
+                   (0, 6) -- (9, 6)
+                   (6, 0) -- (6, 9);
+
+  \draw [color=no] (0, 2.2) -- (9, 2.2)
+                   (0, 5.2) -- (9, 5.2)
+                   (0, 8.2) -- (9, 8.2);
+
+  \node [color=no] at (1.5, 7.1) {\T{pacstrap}};
+  \node [color=no] at (4.5, 7.1) {\T{asp}};
+  \node [color=no] at (7.5, 7.1) {\T{makepkg}};
+
+  \node [color=no] at (1.5, 4.3) {\T{./configure}};
+  \node [color=no] at (1.5, 3.9) {\T{make}};
+
+  \node [color=no] at (4.5, 4.3) {\T{cp}};
+  \node [color=no] at (4.5, 3.9) {\T{/usr/local/bin}};
+
+  \node [color=no] at (7.5, 4.3) {\T{source}};
+  \node [color=no] at (7.5, 3.9) {\T{/opt/Xilinx}};
+
+  \node [color=no] at (1.5, 1.1) {\T{yay}};
+  \node [color=no] at (4.5, 1.1) {\T{systemd-nspawn}};
+  \node [color=no] at (7.5, 1.1) {\T{/nix}};
+
+  \node [color=no] at (1.5, 8.6) {刚顶进去};
+  \node [color=no] at (4.5, 8.6) {被顶到敏感点};
+  \node [color=no] at (7.5, 8.6) {被顶到快高潮};
+  \node [color=no] at (1.5, 5.6) {此次行房很温柔};
+  \node [color=no] at (4.5, 5.6) {此次行房很粗鲁};
+  \node [color=no] at (7.5, 5.6) {做到生气了};
+  \node [color=no] at (1.5, 2.6) {做到没力气};
+  \node [color=no] at (4.5, 2.6) {发生了特殊情况！};
+  \node [color=no] at (7.5, 2.6) {做得实在太过火};
+
+  \node [color=no] at (4.5, -0.5) {Ti$k$Z source: github.com/ZenithalHourlyRate/art};
+\end{tikzpicture}
+
+\end{document}
+
+% vim: nospell
